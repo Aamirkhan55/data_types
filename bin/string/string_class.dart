@@ -46,5 +46,4 @@ String uppercaseSentence = surName.toUpperCase();
   String lowercaseSentence = surName.toLowerCase();
   print(' Uppercase: $uppercaseSentence');
   print(' Lowercase: $lowercaseSentence');
-
 }
