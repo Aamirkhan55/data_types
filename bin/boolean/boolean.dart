@@ -23,8 +23,43 @@ print("Is it a good day : $isGoodDay");
 bool isRainy = !isSunny;
 print("Is it rainy : $isRainy");
 
+bool a = true;
+bool b = false;
 
+if (a == b) {
+  print('a and b are equal');
+} else {
+  print('a and b are not equal');
+}
 
+int marks = 70;
+bool isPass = (marks <= 33) ? true : false;
+print("Did Student is pass : $isPass");
 
+// Task 
+int age = 6;
+bool isEligible = true ;
+if (age < 4 || isEligible) {
+  print("You'r Eligible");
+} 
+
+String enteredPassword = "secretpass";
+String correctPassword = "password123";
+
+bool isPasswordCorrect = (enteredPassword == correctPassword);
+
+if (isPasswordCorrect) {
+  print("Login successful!");
+} else {
+  print("Incorrect password. Please try again.");
+}
+
+int number = 25;
+
+if (number > 0 && number <= 100) {
+  print("The number is within the range of 1 to 100.");
+} else {
+  print("The number is outside the specified range.");
+}
 
 }
