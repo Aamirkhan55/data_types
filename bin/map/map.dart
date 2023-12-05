@@ -27,4 +27,44 @@ void main () {
    print("Capital Of CHAINA : ${capitals['CHAINA']}"); 
    print("Capital Of JAPAN : ${capitals['JAPAN']}"); 
 
+   //Modifying Map
+   Map<String, int> prices = {
+    'Apple' : 120,
+    'Orenge' : 90,
+    'Banana' : 150,
+   };
+  print(prices);
+
+   //Adding new item:
+   prices['Grapes'] = 80;
+   prices['Mengo'] = 130;
+
+  print('After adding new item : $prices');
+
+  //Removing Item
+  prices.remove('Orenge');
+  print("After remove item : $prices");
+
+  //Iterating Through a Map:
+  Map<String, bool> fruits = {'Apple': true, 'Banana': false, 'Orange': true};
+
+  // Using a for-in loop
+  for (var fruit in fruits.keys) {
+    print('Is $fruit tasty? ${fruits[fruit]}');
+  }
+
+  // Using forEach method
+  fruits.forEach((key, value) => print('Is $key tasty? $value'));
+  
+  // Key Search
+   Map<String, String> countries = {'USA': 'United States', 'FR': 'France', 'JP': 'Japan'};
+
+  // Checking if a key exists
+  bool hasGermany = countries.containsKey('FR');
+
+  if (hasGermany) {
+    print('Germany is in the map.');
+  } else {
+    print('Germany is not in the map.');
+  }
 }
