@@ -62,4 +62,9 @@ if (number > 0 && number <= 100) {
   print("The number is outside the specified range.");
 }
 
+  int checkAge = 17;
+  bool isTeenager = checkAge >= 13 && checkAge <= 19;
+  print('Is the person a teenager? $isTeenager'); 
+
+
 }
