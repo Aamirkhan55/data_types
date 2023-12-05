@@ -28,4 +28,13 @@ void main () {
   numbers.add(10);
   print("Number After Adding : $numbers");
 
+  //Removing number 
+  numbers.removeAt(0);
+  numbers.removeAt(1);
+  numbers.removeAt(2);
+  numbers.removeAt(3);
+  print("Number after remove : $numbers");
+
+
+
 }
