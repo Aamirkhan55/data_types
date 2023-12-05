@@ -42,6 +42,28 @@ void main () {
   numbers[3] = 14;
   print("Number after update : $numbers");
 
+  //Iterating Through a List:
+  List<String> countries = ['Pakistan', 'USA', 'Canada', 'UK', 'Germany',];
+  
+  //for_in loop
+  for (var country in countries) {
+    print(country);
+  }
+
+  //for_each loop
+  countries.forEach((country) => print("foreach : $country")
+  );
+
+  // Example : Student Passing Score.
+  List<int> marks = [70,80,85,90,95,100];
+  int passingScore = 70;
+
+  bool allPassed = marks.every((score) => score >= passingScore);
+  if (allPassed) {
+    print("All students passed the exam .");
+  } else {
+    print("Not all student pass exam.");
+  }
 
 
 }
