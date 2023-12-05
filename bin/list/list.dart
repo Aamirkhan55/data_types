@@ -35,6 +35,13 @@ void main () {
   numbers.removeAt(3);
   print("Number after remove : $numbers");
 
+  //Updating number
+  numbers[0] = 11;
+  numbers[1] = 12;
+  numbers[2] = 13;
+  numbers[3] = 14;
+  print("Number after update : $numbers");
+
 
 
 }
